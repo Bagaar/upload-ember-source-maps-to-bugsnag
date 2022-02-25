@@ -15,7 +15,7 @@ const OPTIONS = {
     type: 'string',
   },
   bundleHost: {
-    description: 'Bugsnag bundle host',
+    description: 'Where is the JS bundle hosted',
     type: 'string',
   },
   keepSourceMaps: {

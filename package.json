@@ -12,8 +12,16 @@
     "lib/"
   ],
   "scripts": {
-    "lint": "eslint . --cache",
-    "lint:fix": "eslint . --fix",
+    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
+    "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "lint:json": "prettier \"./**/*.json\" --check",
+    "lint:json:fix": "prettier \"./**/*.json\" --write",
+    "lint:md": "prettier \"./**/*.md\" --check",
+    "lint:md:fix": "prettier \"./**/*.md\" --write",
+    "lint:yml": "prettier \"./**/*.yml\" --check",
+    "lint:yml:fix": "prettier \"./**/*.yml\" --write",
     "prepare": "husky install"
   },
   "commitlint": {
@@ -39,6 +47,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.0.0",
     "husky": "7.0.4",
+    "npm-run-all": "^4.1.5",
     "prettier": "2.5.1"
   },
   "engines": {
