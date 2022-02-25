@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  pull_request: {}
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: "Tests"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: yarn
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile --ignore-scripts --no-progress --silent
+      - name: Lint
+        run: yarn lint
