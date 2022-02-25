@@ -1,11 +1,10 @@
 {
   "name": "upload-ember-source-maps-to-bugsnag",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Upload Ember source maps to Bugsnag.",
   "repository": "https://github.com/Bagaar/upload-ember-source-maps-to-bugsnag",
   "license": "MIT",
   "author": "Bagaar",
-  "type": "module",
   "bin": "bin/index.js",
   "files": [
     "bin/",
@@ -38,8 +37,6 @@
     "yargs": "17.3.1"
   },
   "devDependencies": {
-    "@babel/core": "7.17.5",
-    "@babel/eslint-parser": "7.17.0",
     "@commitlint/cli": "16.2.1",
     "@commitlint/config-conventional": "16.2.1",
     "eslint": "8.9.0",
@@ -51,7 +48,7 @@
     "prettier": "2.5.1"
   },
   "engines": {
-    "node": ">= 16"
+    "node": ">= 12"
   },
   "volta": {
     "node": "16.14.0",

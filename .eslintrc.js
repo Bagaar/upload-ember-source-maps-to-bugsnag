@@ -9,11 +9,13 @@ module.exports = {
     'plugin:node/recommended',
     'plugin:prettier/recommended',
   ],
-  parser: '@babel/eslint-parser',
   parserOptions: {
-    requireConfigFile: false,
-    sourceType: 'module',
+    ecmaVersion: 2019,
+    sourceType: 'script',
   },
   plugins: ['node', 'prettier'],
   root: true,
+  rules: {
+    strict: 'error',
+  },
 };
