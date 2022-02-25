@@ -1,12 +1,14 @@
 {
-  "name": "upload-ember-source-maps-to-bugsnag",
+  "name": "@bagaar/upload-ember-source-maps-to-bugsnag",
   "version": "0.0.0",
   "description": "Upload Ember source maps to Bugsnag.",
   "repository": "https://github.com/Bagaar/upload-ember-source-maps-to-bugsnag",
   "license": "MIT",
   "author": "Bagaar",
   "type": "module",
-  "bin": "bin/index.js",
+  "bin": {
+    "upload-ember-source-maps-to-bugsnag": "bin/index.js"
+  },
   "files": [
     "bin/",
     "lib/"

@@ -13,7 +13,7 @@ In the root of the Ember project, run:
 
 ```shell
 yarn build
-npx github:bagaar/upload-ember-source-maps-to-bugsnag
+yarn upload-ember-source-maps-to-bugsnag
 ```
 
 ## Options
