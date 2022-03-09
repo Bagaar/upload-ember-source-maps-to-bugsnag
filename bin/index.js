@@ -15,8 +15,13 @@ const OPTIONS = {
     type: 'string',
   },
   bundleHost: {
-    description: 'Where is the JS bundle hosted',
+    description: 'Where the bundle is hosted',
     type: 'string',
+  },
+  ci: {
+    default: false,
+    description: 'Only upload source maps during CI',
+    type: 'boolean',
   },
   keepSourceMaps: {
     default: false,

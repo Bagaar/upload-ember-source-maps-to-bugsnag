@@ -18,12 +18,13 @@ yarn upload-ember-source-maps-to-bugsnag
 
 ## Options
 
-| Name                 | Description                       | Default Value                              |
-| -------------------- | --------------------------------- | ------------------------------------------ |
-| `--api-key`          | Bugsnag API key.                  | Defaults to `BUGSNAG_API_KEY` env var.     |
-| `--app-version`      | Version of the app.               | Parsed from `index.html` if not provided.  |
-| `--bundle-host`      | Where the bundle is hosted.       | Defaults to `BUGSNAG_BUNDLE_HOST` env var. |
-| `--keep-source-maps` | Keep source maps after uploading. | `false`                                    |
+| Name                 | Description                        | Default Value                              |
+| -------------------- | ---------------------------------- | ------------------------------------------ |
+| `--api-key`          | Bugsnag API key.                   | Defaults to `BUGSNAG_API_KEY` env var.     |
+| `--app-version`      | Version of the app.                | Parsed from `index.html` if not provided.  |
+| `--bundle-host`      | Where the bundle is hosted.        | Defaults to `BUGSNAG_BUNDLE_HOST` env var. |
+| `--ci`               | Only upload source maps during CI. | `false`                                    |
+| `--keep-source-maps` | Keep source maps after uploading.  | `false`                                    |
 
 This script also takes a `BUGSNAG_ENABLED` env var into account. If set to
 `false`, uploading source maps will be skipped.
