@@ -9,22 +9,27 @@ workflow we use at [Bagaar](https://www.bagaar.be/).
 
 ## Usage
 
-In the root of the Ember project, run:
+In the root of the project, run:
 
 ```shell
 yarn build
 yarn upload-ember-source-maps-to-bugsnag
 ```
 
+Make sure that source maps are enabled. More info on enabling source maps can be
+found [here](https://cli.emberjs.com/release/advanced-use/asset-compilation/#sourcemaps).
+
 ## Options
 
 | Name                 | Description                        | Default Value                              |
 | -------------------- | ---------------------------------- | ------------------------------------------ |
-| `--api-key`          | Bugsnag API key.                   | Defaults to `BUGSNAG_API_KEY` env var.     |
-| `--app-version`      | Version of the app.                | Parsed from `index.html` if not provided.  |
-| `--bundle-host`      | Where the bundle is hosted.        | Defaults to `BUGSNAG_BUNDLE_HOST` env var. |
+| `--api-key` \*       | Bugsnag API key.                   | Defaults to `BUGSNAG_API_KEY` env var.     |
+| `--app-version` \*   | Version of the app.                | Parsed from `index.html` if not provided.  |
+| `--bundle-host` \*   | Where the bundle is hosted.        | Defaults to `BUGSNAG_BUNDLE_HOST` env var. |
 | `--ci`               | Only upload source maps during CI. | `false`                                    |
 | `--keep-source-maps` | Keep source maps after uploading.  | `false`                                    |
+
+Options marked with `*` are required.
 
 This script also takes a `BUGSNAG_ENABLED` env var into account. If set to
 `false`, uploading source maps will be skipped.
