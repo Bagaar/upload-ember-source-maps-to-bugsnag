@@ -34,7 +34,7 @@
   "dependencies": {
     "@bugsnag/source-maps": "^2.3.1",
     "dotenv": "^16.0.0",
-    "envalid": "^7.3.0",
+    "envalid": "^7.3.1",
     "kleur": "^4.1.4",
     "node-html-parser": "^5.3.3",
     "yargs": "17.3.1"
