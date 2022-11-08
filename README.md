@@ -12,8 +12,8 @@ workflow we use at [Bagaar](https://www.bagaar.be/).
 In the root of the project, run:
 
 ```shell
-yarn build
-yarn upload-ember-source-maps-to-bugsnag
+pnpm build
+pnpm upload-ember-source-maps-to-bugsnag
 ```
 
 Make sure that source maps are enabled. More info on enabling source maps can be

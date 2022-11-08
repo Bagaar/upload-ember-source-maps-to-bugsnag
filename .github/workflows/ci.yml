@@ -8,16 +8,19 @@ on:
 
 jobs:
   test:
-    name: "Tests"
+    name: Tests
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
-      - uses: actions/checkout@v2
-      - name: Install Node
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          cache: yarn
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile --ignore-scripts --no-progress --silent
+        run: pnpm install
       - name: Lint
-        run: yarn lint
+        run: pnpm lint
