@@ -14,8 +14,8 @@
     "lib/"
   ],
   "scripts": {
-    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
-    "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
+    "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
+    "lint:fix": "concurrently \"npm:lint:*:fix\" --names \"fix:\"",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "lint:json": "prettier \"./**/*.json\" --check",
@@ -44,12 +44,12 @@
     "@babel/eslint-parser": "^7.19.1",
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
+    "concurrently": "^7.5.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.2",
-    "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1"
   },
   "packageManager": "pnpm@7.14.2",
