@@ -44,7 +44,7 @@
     "@babel/eslint-parser": "^7.19.1",
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
-    "concurrently": "^7.5.0",
+    "concurrently": "^7.6.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-node": "^11.1.0",
