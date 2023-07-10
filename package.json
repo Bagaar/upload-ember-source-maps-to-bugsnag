@@ -23,13 +23,7 @@
     "lint:md": "prettier \"./**/*.md\" --check",
     "lint:md:fix": "prettier \"./**/*.md\" --write",
     "lint:yml": "prettier \"./**/*.yml\" --check",
-    "lint:yml:fix": "prettier \"./**/*.yml\" --write",
-    "prepare": "husky install"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
+    "lint:yml:fix": "prettier \"./**/*.yml\" --write"
   },
   "dependencies": {
     "@bugsnag/source-maps": "^2.3.1",
@@ -42,14 +36,11 @@
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/eslint-parser": "^7.19.1",
-    "@commitlint/cli": "^17.2.0",
-    "@commitlint/config-conventional": "^17.2.0",
     "concurrently": "^7.5.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.2",
     "prettier": "^2.7.1"
   },
   "packageManager": "pnpm@7.14.2",
