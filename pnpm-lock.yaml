@@ -18,8 +18,8 @@ dependencies:
     specifier: ^4.1.5
     version: 4.1.5
   node-html-parser:
-    specifier: ^6.1.5
-    version: 6.1.5
+    specifier: ^6.1.9
+    version: 6.1.9
   yargs:
     specifier: ^17.7.2
     version: 17.7.2
@@ -1242,8 +1242,8 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /node-html-parser@6.1.5:
-    resolution: {integrity: sha512-fAaM511feX++/Chnhe475a0NHD8M7AxDInsqQpz6x63GRF7xYNdS8Vo5dKsIVPgsOvG7eioRRTZQnWBrhDHBSg==}
+  /node-html-parser@6.1.9:
+    resolution: {integrity: sha512-nQ+MRf0PmRTLcMalVqMsWvceSaBydBCBlnQSL78HVk/E8e0Aazyao4SI9aB67XAAgOgHMsw7q5dJBUPPt9XE3g==}
     dependencies:
       css-select: 5.1.0
       he: 1.2.0
